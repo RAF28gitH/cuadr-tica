@@ -6,7 +6,7 @@ struct resultado{
 };
 
 int main(){
-	double a,b,c;
+	double a,b,c; //creo las variables que leeré
 	resultado r; //creo una variable r para guardar los resultados de x1 y x2
 	cin>>a>>b>>c;
 	if(a==0){ //compruebo que A no sea 0
