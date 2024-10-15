@@ -13,6 +13,6 @@ int main(){
 	}
 	x1=(b+sqrt(b*b-4*a*c))/(2*a);
 	x2=(b-sqrt(b*b-4*a*c))/(2*a);
-	cout<<x1<<endl<<x2;
+	cout<<x1<<endl<<x2<<endl;
 	return 0;
 }
