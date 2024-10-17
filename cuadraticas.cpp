@@ -10,12 +10,15 @@ int main(){
 	resultado r; //creo una variable r para guardar los resultados de x1 y x2
 	cin>>a>>b>>c;
 	if(a==0){ //compruebo que A no sea 0
-		cout<<"A no puede ser 0"<<endl;
+		cout<<"A no puede ser 0."<<endl;
 		return 0;
 	}
-	b*=-1;
-	r.x1=(b+sqrt(b*b-4*a*c))/(2*a);
-	r.x2=(b-sqrt(b*b-4*a*c))/(2*a);
+	if(b*b-4*a*c<0){ //compruebo si no da raíz negativa y por ende el código tiene solución
+		cout<<"No tiene solución."<<endl;
+		return 0;
+	}
+	r.x1=(b*-1+sqrt(b*b-4*a*c))/(2*a);
+	r.x2=(b*-1-sqrt(b*b-4*a*c))/(2*a);
 	cout<<r.x1<<endl<<r.x2<<endl; //imprimo los resultados
 	return 0;
 }
