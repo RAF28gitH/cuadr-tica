@@ -8,6 +8,7 @@ struct resultado{
 int main(){
 	double a,b,c; //creo las variables que leeré
 	resultado r; //creo una variable r para guardar los resultados de x1 y x2
+	cout<<"Ingresa los valores de A, B y C (en ese órden):"<<endl;
 	if(!(cin>>a>>b>>c)){ //compruebo que todos los caracteres sean números válidos
 		cout<<"Debes incluír solo números";
 		return 0;
