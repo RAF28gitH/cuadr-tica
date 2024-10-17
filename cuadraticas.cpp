@@ -8,7 +8,10 @@ struct resultado{
 int main(){
 	double a,b,c; //creo las variables que leeré
 	resultado r; //creo una variable r para guardar los resultados de x1 y x2
-	cin>>a>>b>>c;
+	if(!(cin>>a>>b>>c)){ //compruebo que todos los caracteres sean números válidos
+		cout<<"Debes incluír solo números";
+		return 0;
+	}
 	if(a==0){ //compruebo que A no sea 0
 		cout<<"A no puede ser 0."<<endl;
 		return 0;
